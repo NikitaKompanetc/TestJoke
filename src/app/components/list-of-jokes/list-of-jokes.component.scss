@@ -1,0 +1,36 @@
+$primary: #11998e;
+$secondary: #38ef7d;
+$white: #fff;
+$gray: #9b9b9b;
+
+.container {
+  .table {
+    .jokeBox {
+      overflow-y: scroll;
+      height: 50px;
+      &::-webkit-scrollbar-thumb {
+        background-color: transparent;
+      }
+      &::-webkit-scrollbar-track {
+        background: transparent;
+      }
+      &::-webkit-scrollbar {
+        width: 0px;
+      }
+    }
+  }
+  .searchInp {
+    margin: 20px 0;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    padding: 5px;
+    width: 30%;
+    &:focus {
+      outline: none;
+      border-top: none;
+      border-left: none;
+      border-right: none;
+    }
+  }
+}

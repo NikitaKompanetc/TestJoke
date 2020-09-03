@@ -1,0 +1,37 @@
+<div class="container">
+    <div class="row">
+        <table class="table pd-b-5">
+
+            <thead>
+                <tr>
+                    <th>id</th>
+                    <th> Categories</th>
+                    <th> Joke</th>
+                    <th> Description</th>
+                </tr>
+            </thead>
+
+            <tbody>
+                <tr *ngFor="let joke of listOfJokesTemp">
+                    <td>{{joke.id}}</td>
+                    <td>
+                        {{joke.categories}}
+
+                    </td>
+                    <td>
+                        <div class=" jokeBox">
+                            {{joke.joke}}
+                        </div>
+                    </td>
+                    <td>
+                        <button (click)="openById(joke.id)">
+                            Open
+                        </button>
+                    </td>
+                </tr>
+        </table>
+    </div>
+    <input placeholder="Search" class="searchInp" (input)='search($event.target.value);pagination.pageChange(1)'
+        type="text">
+    <app-pagination #pagination [numberOfPages]="numberOfPages" ($onPageChanges)='onPageChane($event)'></app-pagination>
+</div>

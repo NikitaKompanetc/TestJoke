@@ -1,0 +1,30 @@
+.main_block {
+    display: flex;
+    .for_pagination {
+        cursor: pointer;
+        display: flex;
+        width: 20%;
+        .bold {
+            // font-size: px;
+            width: 35px;
+            height: 35px;
+            padding: 10px;
+            font-weight: bold;
+            background-color: aqua;
+        }
+        .items {
+            width: 50px;
+            height: 30px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+    }
+    .allClick {
+        cursor: pointer;
+        padding: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}

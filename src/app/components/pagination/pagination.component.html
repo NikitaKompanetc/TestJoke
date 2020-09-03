@@ -1,0 +1,16 @@
+<div class="main_block">
+    <div class="allClick" (click)="forwardPage(-1)">
+        < </div>
+            <div class="for_pagination">
+
+                <div id="{{item}}" [class.bold]='currentPage===item' class="items" *ngFor="let item of arrayToDisplay"
+                    (click)="pageChange(item)">
+
+
+                    {{nicePag(item)}}
+
+                </div>
+
+            </div>
+            <div class="allClick" (click)="forwardPage(1)"> > </div>
+    </div>
